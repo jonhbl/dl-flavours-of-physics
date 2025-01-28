@@ -28,8 +28,12 @@ def __cvm(subindices, total_events):
     :param total_events: count of events in the second distribution
     :return: cvm metric
     """
-    target_distribution = numpy.arange(1, total_events + 1, dtype='float') / total_events
-    subarray_distribution = numpy.cumsum(numpy.bincount(subindices, minlength=total_events), dtype='float')
+    target_distribution = (
+        numpy.arange(1, total_events + 1, dtype="float") / total_events
+    )
+    subarray_distribution = numpy.cumsum(
+        numpy.bincount(subindices, minlength=total_events), dtype="float"
+    )
     subarray_distribution /= 1.0 * subarray_distribution[-1]
     return numpy.mean((target_distribution - subarray_distribution) ** 2)
 
@@ -53,7 +57,9 @@ def compute_cvm(predictions, masses, n_neighbours=200, step=50):
     predictions = predictions[numpy.argsort(masses)]
 
     # Second, replace probabilities with order of probability among other events
-    predictions = numpy.argsort(numpy.argsort(predictions, kind='mergesort'), kind='mergesort')
+    predictions = numpy.argsort(
+        numpy.argsort(predictions, kind="mergesort"), kind="mergesort"
+    )
 
     # Now, each window forms a group, and we can compute contribution of each group to CvM
     cvms = []
@@ -89,26 +95,42 @@ def compute_ks(data_prediction, mc_prediction, weights_data, weights_mc):
     :param weights_mc: array-like, Monte Carlo weights
     :return: ks value
     """
-    assert len(data_prediction) == len(weights_data), 'Data length and weight one must be the same'
-    assert len(mc_prediction) == len(weights_mc), 'Data length and weight one must be the same'
+    assert len(data_prediction) == len(
+        weights_data
+    ), "Data length and weight one must be the same"
+    assert len(mc_prediction) == len(
+        weights_mc
+    ), "Data length and weight one must be the same"
 
-    data_prediction, mc_prediction = numpy.array(data_prediction), numpy.array(mc_prediction)
+    data_prediction, mc_prediction = numpy.array(data_prediction), numpy.array(
+        mc_prediction
+    )
     weights_data, weights_mc = numpy.array(weights_data), numpy.array(weights_mc)
 
-    assert numpy.all(data_prediction >= 0.) and numpy.all(data_prediction <= 1.), 'Data predictions are out of range [0, 1]'
-    assert numpy.all(mc_prediction >= 0.) and numpy.all(mc_prediction <= 1.), 'MC predictions are out of range [0, 1]'
+    assert numpy.all(data_prediction >= 0.0) and numpy.all(
+        data_prediction <= 1.0
+    ), "Data predictions are out of range [0, 1]"
+    assert numpy.all(mc_prediction >= 0.0) and numpy.all(
+        mc_prediction <= 1.0
+    ), "MC predictions are out of range [0, 1]"
 
     weights_data /= numpy.sum(weights_data)
     weights_mc /= numpy.sum(weights_mc)
 
-    fpr, tpr = __roc_curve_splitted(data_prediction, mc_prediction, weights_data, weights_mc)
+    fpr, tpr = __roc_curve_splitted(
+        data_prediction, mc_prediction, weights_data, weights_mc
+    )
 
     Dnm = numpy.max(numpy.abs(fpr - tpr))
     return Dnm
 
 
-def roc_auc_truncated(labels, predictions, tpr_thresholds=(0.2, 0.4, 0.6, 0.8),
-                      roc_weights=(4, 3, 2, 1, 0)):
+def roc_auc_truncated(
+    labels,
+    predictions,
+    tpr_thresholds=(0.2, 0.4, 0.6, 0.8),
+    roc_weights=(4, 3, 2, 1, 0),
+):
     """
     Compute weighted area under ROC curve.
 
@@ -118,16 +140,35 @@ def roc_auc_truncated(labels, predictions, tpr_thresholds=(0.2, 0.4, 0.6, 0.8),
     :param roc_weights: array-like, weights for true positive rate segments
     :return: weighted AUC
     """
-    assert numpy.all(predictions >= 0.) and numpy.all(predictions <= 1.), 'Data predictions are out of range [0, 1]'
-    assert len(tpr_thresholds) + 1 == len(roc_weights), 'Incompatible lengths of thresholds and weights'
+    assert numpy.all(predictions >= 0.0) and numpy.all(
+        predictions <= 1.0
+    ), "Data predictions are out of range [0, 1]"
+    assert len(tpr_thresholds) + 1 == len(
+        roc_weights
+    ), "Incompatible lengths of thresholds and weights"
     fpr, tpr, _ = roc_curve(labels, predictions)
-    area = 0.
-    tpr_thresholds = [0.] + list(tpr_thresholds) + [1.]
+    area = 0.0
+    tpr_thresholds = [0.0] + list(tpr_thresholds) + [1.0]
     for index in range(1, len(tpr_thresholds)):
         tpr_cut = numpy.minimum(tpr, tpr_thresholds[index])
         tpr_previous = numpy.minimum(tpr, tpr_thresholds[index - 1])
-        area += roc_weights[index - 1] * (auc(fpr, tpr_cut, reorder=True) - auc(fpr, tpr_previous, reorder=True))
+        area += roc_weights[index - 1] * (
+            auc(fpr, tpr_cut, reorder=True) - auc(fpr, tpr_previous, reorder=True)
+        )
     tpr_thresholds = numpy.array(tpr_thresholds)
     # roc auc normalization to be 1 for an ideal classifier
-    area /= numpy.sum((tpr_thresholds[1:] - tpr_thresholds[:-1]) * numpy.array(roc_weights))
+    area /= numpy.sum(
+        (tpr_thresholds[1:] - tpr_thresholds[:-1]) * numpy.array(roc_weights)
+    )
     return area
+
+
+def check_ks(agreement_probs, check_agreement):
+
+    ks = compute_ks(
+        agreement_probs[check_agreement["signal"].values == 0],
+        agreement_probs[check_agreement["signal"].values == 1],
+        check_agreement[check_agreement["signal"] == 0]["weight"].values,
+        check_agreement[check_agreement["signal"] == 1]["weight"].values,
+    )
+    return ks
