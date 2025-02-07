@@ -1,0 +1,792 @@
+digraph {
+    graph [ rankdir=TB ]
+    graph [ rankdir="LR" ]
+
+    0 [ label="mass<1805.46704" ]
+    0 -> 1 [label="yes" color="#FF0000"]
+    0 -> 2 [label="no, missing" color="#0000FF"]
+
+    1 [ label="mass<1750.30701" ]
+    1 -> 3 [label="yes" color="#FF0000"]
+    1 -> 4 [label="no, missing" color="#0000FF"]
+
+    3 [ label="mass<1741.74487" ]
+    3 -> 7 [label="yes" color="#FF0000"]
+    3 -> 8 [label="no, missing" color="#0000FF"]
+
+    7 [ label="mass<1731.45996" ]
+    7 -> 15 [label="yes" color="#FF0000"]
+    7 -> 16 [label="no, missing" color="#0000FF"]
+
+    15 [ label="leaf=-0.21035938" ]
+
+    16 [ label="p1_p<80563.625" ]
+    16 -> 29 [label="yes" color="#FF0000"]
+    16 -> 30 [label="no, missing" color="#0000FF"]
+
+    29 [ label="p2_IP<0.0784852207" ]
+    29 -> 53 [label="yes" color="#FF0000"]
+    29 -> 54 [label="no, missing" color="#0000FF"]
+
+    53 [ label="leaf=-0.038210284" ]
+
+    54 [ label="p2_IP<1.26155865" ]
+    54 -> 87 [label="yes" color="#FF0000"]
+    54 -> 88 [label="no, missing" color="#0000FF"]
+
+    87 [ label="leaf=-0.186809823" ]
+
+    88 [ label="leaf=-0.0520957671" ]
+
+    30 [ label="LifeTime<0.0013287242" ]
+    30 -> 55 [label="yes" color="#FF0000"]
+    30 -> 56 [label="no, missing" color="#0000FF"]
+
+    55 [ label="p1_track_Chi2Dof<1.12425315" ]
+    55 -> 89 [label="yes" color="#FF0000"]
+    55 -> 90 [label="no, missing" color="#0000FF"]
+
+    89 [ label="p1_eta<4.23926973" ]
+    89 -> 121 [label="yes" color="#FF0000"]
+    89 -> 122 [label="no, missing" color="#0000FF"]
+
+    121 [ label="leaf=-0.150636509" ]
+
+    122 [ label="leaf=-0.038210284" ]
+
+    90 [ label="leaf=-0.035959322" ]
+
+    56 [ label="leaf=0.00988491438" ]
+
+    8 [ label="p1_IsoBDT<-0.23001498" ]
+    8 -> 17 [label="yes" color="#FF0000"]
+    8 -> 18 [label="no, missing" color="#0000FF"]
+
+    17 [ label="p2_p<16718.4336" ]
+    17 -> 31 [label="yes" color="#FF0000"]
+    17 -> 32 [label="no, missing" color="#0000FF"]
+
+    31 [ label="p1_IsoBDT<-0.376781017" ]
+    31 -> 57 [label="yes" color="#FF0000"]
+    31 -> 58 [label="no, missing" color="#0000FF"]
+
+    57 [ label="leaf=-0.0115811583" ]
+
+    58 [ label="isolationc<1" ]
+    58 -> 91 [label="yes" color="#FF0000"]
+    58 -> 92 [label="no, missing" color="#0000FF"]
+
+    91 [ label="leaf=-0.0434325263" ]
+
+    92 [ label="leaf=-0.146638706" ]
+
+    32 [ label="p0_IPSig<4.91101122" ]
+    32 -> 59 [label="yes" color="#FF0000"]
+    32 -> 60 [label="no, missing" color="#0000FF"]
+
+    59 [ label="leaf=-0.0908674002" ]
+
+    60 [ label="isolationc<3" ]
+    60 -> 93 [label="yes" color="#FF0000"]
+    60 -> 94 [label="no, missing" color="#0000FF"]
+
+    93 [ label="p2_p<38245.9336" ]
+    93 -> 123 [label="yes" color="#FF0000"]
+    93 -> 124 [label="no, missing" color="#0000FF"]
+
+    123 [ label="LifeTime<0.00144315767" ]
+    123 -> 157 [label="yes" color="#FF0000"]
+    123 -> 158 [label="no, missing" color="#0000FF"]
+
+    157 [ label="LifeTime<0.00103923539" ]
+    157 -> 187 [label="yes" color="#FF0000"]
+    157 -> 188 [label="no, missing" color="#0000FF"]
+
+    187 [ label="leaf=0.0143030081" ]
+
+    188 [ label="leaf=-0.038210284" ]
+
+    158 [ label="leaf=0.043426089" ]
+
+    124 [ label="leaf=0.0548576899" ]
+
+    94 [ label="DOCAthree<0.0269553401" ]
+    94 -> 125 [label="yes" color="#FF0000"]
+    94 -> 126 [label="no, missing" color="#0000FF"]
+
+    125 [ label="leaf=-0.0742286965" ]
+
+    126 [ label="leaf=0.0143030081" ]
+
+    18 [ label="isolationc<1" ]
+    18 -> 33 [label="yes" color="#FF0000"]
+    18 -> 34 [label="no, missing" color="#0000FF"]
+
+    33 [ label="VertexChi2<2.18436217" ]
+    33 -> 61 [label="yes" color="#FF0000"]
+    33 -> 62 [label="no, missing" color="#0000FF"]
+
+    61 [ label="leaf=-0.00782991666" ]
+
+    62 [ label="leaf=-0.0973865911" ]
+
+    34 [ label="p0_IP<0.850119948" ]
+    34 -> 63 [label="yes" color="#FF0000"]
+    34 -> 64 [label="no, missing" color="#0000FF"]
+
+    63 [ label="leaf=-0.174259424" ]
+
+    64 [ label="leaf=-0.0550519302" ]
+
+    4 [ label="mass<1756.31494" ]
+    4 -> 9 [label="yes" color="#FF0000"]
+    4 -> 10 [label="no, missing" color="#0000FF"]
+
+    9 [ label="isolationd<1" ]
+    9 -> 19 [label="yes" color="#FF0000"]
+    9 -> 20 [label="no, missing" color="#0000FF"]
+
+    19 [ label="p1_IsoBDT<-0.356651574" ]
+    19 -> 35 [label="yes" color="#FF0000"]
+    19 -> 36 [label="no, missing" color="#0000FF"]
+
+    35 [ label="DOCAthree<0.114434272" ]
+    35 -> 65 [label="yes" color="#FF0000"]
+    35 -> 66 [label="no, missing" color="#0000FF"]
+
+    65 [ label="p1_p<135291.531" ]
+    65 -> 95 [label="yes" color="#FF0000"]
+    65 -> 96 [label="no, missing" color="#0000FF"]
+
+    95 [ label="LifeTime<0.000726830156" ]
+    95 -> 127 [label="yes" color="#FF0000"]
+    95 -> 128 [label="no, missing" color="#0000FF"]
+
+    127 [ label="p0_IP<0.197712123" ]
+    127 -> 159 [label="yes" color="#FF0000"]
+    127 -> 160 [label="no, missing" color="#0000FF"]
+
+    159 [ label="leaf=0.0364359319" ]
+
+    160 [ label="leaf=-0.0299628414" ]
+
+    128 [ label="p0_IP<1.46964622" ]
+    128 -> 161 [label="yes" color="#FF0000"]
+    128 -> 162 [label="no, missing" color="#0000FF"]
+
+    161 [ label="leaf=0.0603654273" ]
+
+    162 [ label="leaf=0.00988491438" ]
+
+    96 [ label="leaf=-0.0141626848" ]
+
+    66 [ label="leaf=-0.0639331862" ]
+
+    36 [ label="p0_IPSig<8.78939438" ]
+    36 -> 67 [label="yes" color="#FF0000"]
+    36 -> 68 [label="no, missing" color="#0000FF"]
+
+    67 [ label="VertexChi2<5.00125217" ]
+    67 -> 97 [label="yes" color="#FF0000"]
+    67 -> 98 [label="no, missing" color="#0000FF"]
+
+    97 [ label="p0_p<16290.9756" ]
+    97 -> 129 [label="yes" color="#FF0000"]
+    97 -> 130 [label="no, missing" color="#0000FF"]
+
+    129 [ label="p2_IP<0.219735041" ]
+    129 -> 163 [label="yes" color="#FF0000"]
+    129 -> 164 [label="no, missing" color="#0000FF"]
+
+    163 [ label="leaf=-0.00782991666" ]
+
+    164 [ label="leaf=-0.0933133662" ]
+
+    130 [ label="p1_eta<3.85625196" ]
+    130 -> 165 [label="yes" color="#FF0000"]
+    130 -> 166 [label="no, missing" color="#0000FF"]
+
+    165 [ label="p0_IPSig<5.34500504" ]
+    165 -> 189 [label="yes" color="#FF0000"]
+    165 -> 190 [label="no, missing" color="#0000FF"]
+
+    189 [ label="leaf=-0.0141626848" ]
+
+    190 [ label="leaf=0.0467924774" ]
+
+    166 [ label="LifeTime<0.000663559069" ]
+    166 -> 191 [label="yes" color="#FF0000"]
+    166 -> 192 [label="no, missing" color="#0000FF"]
+
+    191 [ label="leaf=-0.0622578859" ]
+
+    192 [ label="leaf=0.00628439058" ]
+
+    98 [ label="DOCAthree<0.014249132" ]
+    98 -> 131 [label="yes" color="#FF0000"]
+    98 -> 132 [label="no, missing" color="#0000FF"]
+
+    131 [ label="leaf=-0.0141626848" ]
+
+    132 [ label="p0_IP<0.560902357" ]
+    132 -> 167 [label="yes" color="#FF0000"]
+    132 -> 168 [label="no, missing" color="#0000FF"]
+
+    167 [ label="p1_eta<2.99348998" ]
+    167 -> 193 [label="yes" color="#FF0000"]
+    167 -> 194 [label="no, missing" color="#0000FF"]
+
+    193 [ label="leaf=-0.038210284" ]
+
+    194 [ label="leaf=-0.149544314" ]
+
+    168 [ label="leaf=-0.0299628414" ]
+
+    68 [ label="p1_eta<2.40074492" ]
+    68 -> 99 [label="yes" color="#FF0000"]
+    68 -> 100 [label="no, missing" color="#0000FF"]
+
+    99 [ label="DOCAthree<0.0352063812" ]
+    99 -> 133 [label="yes" color="#FF0000"]
+    99 -> 134 [label="no, missing" color="#0000FF"]
+
+    133 [ label="leaf=-0.112329759" ]
+
+    134 [ label="leaf=-0.0141626848" ]
+
+    100 [ label="p1_track_Chi2Dof<0.700573981" ]
+    100 -> 135 [label="yes" color="#FF0000"]
+    100 -> 136 [label="no, missing" color="#0000FF"]
+
+    135 [ label="leaf=-0.0819696113" ]
+
+    136 [ label="p0_IP<0.245305687" ]
+    136 -> 169 [label="yes" color="#FF0000"]
+    136 -> 170 [label="no, missing" color="#0000FF"]
+
+    169 [ label="p2_IP<0.267646343" ]
+    169 -> 195 [label="yes" color="#FF0000"]
+    169 -> 196 [label="no, missing" color="#0000FF"]
+
+    195 [ label="leaf=0.00988491438" ]
+
+    196 [ label="leaf=-0.11035309" ]
+
+    170 [ label="p1_IsoBDT<-0.23001498" ]
+    170 -> 197 [label="yes" color="#FF0000"]
+    170 -> 198 [label="no, missing" color="#0000FF"]
+
+    197 [ label="VertexChi2<1.0074724" ]
+    197 -> 219 [label="yes" color="#FF0000"]
+    197 -> 220 [label="no, missing" color="#0000FF"]
+
+    219 [ label="leaf=-0.0141626848" ]
+
+    220 [ label="leaf=0.0589484237" ]
+
+    198 [ label="isolationc<3" ]
+    198 -> 221 [label="yes" color="#FF0000"]
+    198 -> 222 [label="no, missing" color="#0000FF"]
+
+    221 [ label="mass<1755.04419" ]
+    221 -> 241 [label="yes" color="#FF0000"]
+    221 -> 242 [label="no, missing" color="#0000FF"]
+
+    241 [ label="p1_p<57991.1562" ]
+    241 -> 253 [label="yes" color="#FF0000"]
+    241 -> 254 [label="no, missing" color="#0000FF"]
+
+    253 [ label="p1_eta<3.20008397" ]
+    253 -> 259 [label="yes" color="#FF0000"]
+    253 -> 260 [label="no, missing" color="#0000FF"]
+
+    259 [ label="leaf=-0.00782991666" ]
+
+    260 [ label="leaf=-0.107654087" ]
+
+    254 [ label="leaf=0.0180694479" ]
+
+    242 [ label="LifeTime<0.00169131206" ]
+    242 -> 255 [label="yes" color="#FF0000"]
+    242 -> 256 [label="no, missing" color="#0000FF"]
+
+    255 [ label="leaf=0.038570106" ]
+
+    256 [ label="leaf=0.00988491438" ]
+
+    222 [ label="LifeTime<0.000799295143" ]
+    222 -> 243 [label="yes" color="#FF0000"]
+    222 -> 244 [label="no, missing" color="#0000FF"]
+
+    243 [ label="leaf=-0.0141626848" ]
+
+    244 [ label="leaf=0.0505755246" ]
+
+    20 [ label="p0_IP<0.894801021" ]
+    20 -> 37 [label="yes" color="#FF0000"]
+    20 -> 38 [label="no, missing" color="#0000FF"]
+
+    37 [ label="p1_IsoBDT<-0.270897716" ]
+    37 -> 69 [label="yes" color="#FF0000"]
+    37 -> 70 [label="no, missing" color="#0000FF"]
+
+    69 [ label="leaf=-0.0434325263" ]
+
+    70 [ label="leaf=-0.160858467" ]
+
+    38 [ label="leaf=0.00988491438" ]
+
+    10 [ label="mass<1797.75098" ]
+    10 -> 21 [label="yes" color="#FF0000"]
+    10 -> 22 [label="no, missing" color="#0000FF"]
+
+    21 [ label="mass<1757.63501" ]
+    21 -> 39 [label="yes" color="#FF0000"]
+    21 -> 40 [label="no, missing" color="#0000FF"]
+
+    39 [ label="p1_IsoBDT<-0.124453649" ]
+    39 -> 71 [label="yes" color="#FF0000"]
+    39 -> 72 [label="no, missing" color="#0000FF"]
+
+    71 [ label="isolatione<1" ]
+    71 -> 101 [label="yes" color="#FF0000"]
+    71 -> 102 [label="no, missing" color="#0000FF"]
+
+    101 [ label="p1_p<10227.1318" ]
+    101 -> 137 [label="yes" color="#FF0000"]
+    101 -> 138 [label="no, missing" color="#0000FF"]
+
+    137 [ label="leaf=-0.0141626848" ]
+
+    138 [ label="p0_p<5345.5918" ]
+    138 -> 171 [label="yes" color="#FF0000"]
+    138 -> 172 [label="no, missing" color="#0000FF"]
+
+    171 [ label="leaf=0.00628439058" ]
+
+    172 [ label="p2_pt<370.141327" ]
+    172 -> 199 [label="yes" color="#FF0000"]
+    172 -> 200 [label="no, missing" color="#0000FF"]
+
+    199 [ label="leaf=0.00988491438" ]
+
+    200 [ label="p2_p<77090.7422" ]
+    200 -> 223 [label="yes" color="#FF0000"]
+    200 -> 224 [label="no, missing" color="#0000FF"]
+
+    223 [ label="leaf=0.0610762797" ]
+
+    224 [ label="leaf=0.00988491438" ]
+
+    102 [ label="leaf=-0.0294467062" ]
+
+    72 [ label="p1_p<65242.1406" ]
+    72 -> 103 [label="yes" color="#FF0000"]
+    72 -> 104 [label="no, missing" color="#0000FF"]
+
+    103 [ label="VertexChi2<6.10713959" ]
+    103 -> 139 [label="yes" color="#FF0000"]
+    103 -> 140 [label="no, missing" color="#0000FF"]
+
+    139 [ label="leaf=-0.0115811583" ]
+
+    140 [ label="leaf=-0.118774451" ]
+
+    104 [ label="leaf=0.00985271577" ]
+
+    40 [ label="mass<1796.38794" ]
+    40 -> 73 [label="yes" color="#FF0000"]
+    40 -> 74 [label="no, missing" color="#0000FF"]
+
+    73 [ label="leaf=0.0653619692" ]
+
+    74 [ label="p1_IsoBDT<-0.106944814" ]
+    74 -> 105 [label="yes" color="#FF0000"]
+    74 -> 106 [label="no, missing" color="#0000FF"]
+
+    105 [ label="p0_p<4777.05371" ]
+    105 -> 141 [label="yes" color="#FF0000"]
+    105 -> 142 [label="no, missing" color="#0000FF"]
+
+    141 [ label="leaf=-0.0141626848" ]
+
+    142 [ label="leaf=0.0627514049" ]
+
+    106 [ label="LifeTime<0.00101637281" ]
+    106 -> 143 [label="yes" color="#FF0000"]
+    106 -> 144 [label="no, missing" color="#0000FF"]
+
+    143 [ label="leaf=-0.038210284" ]
+
+    144 [ label="leaf=0.0143030081" ]
+
+    22 [ label="isolationd<1" ]
+    22 -> 41 [label="yes" color="#FF0000"]
+    22 -> 42 [label="no, missing" color="#0000FF"]
+
+    41 [ label="p0_IP<0.368694723" ]
+    41 -> 75 [label="yes" color="#FF0000"]
+    41 -> 76 [label="no, missing" color="#0000FF"]
+
+    75 [ label="p1_p<23300.0098" ]
+    75 -> 107 [label="yes" color="#FF0000"]
+    75 -> 108 [label="no, missing" color="#0000FF"]
+
+    107 [ label="p2_p<49770.8438" ]
+    107 -> 145 [label="yes" color="#FF0000"]
+    107 -> 146 [label="no, missing" color="#0000FF"]
+
+    145 [ label="p1_p<10360.8652" ]
+    145 -> 173 [label="yes" color="#FF0000"]
+    145 -> 174 [label="no, missing" color="#0000FF"]
+
+    173 [ label="leaf=-0.0294467062" ]
+
+    174 [ label="p2_pt<2880.48389" ]
+    174 -> 201 [label="yes" color="#FF0000"]
+    174 -> 202 [label="no, missing" color="#0000FF"]
+
+    201 [ label="p0_p<21523.7422" ]
+    201 -> 225 [label="yes" color="#FF0000"]
+    201 -> 226 [label="no, missing" color="#0000FF"]
+
+    225 [ label="leaf=-0.146230444" ]
+
+    226 [ label="leaf=-0.038210284" ]
+
+    202 [ label="leaf=-0.0299628414" ]
+
+    146 [ label="leaf=0.0404111147" ]
+
+    108 [ label="mass<1800.61401" ]
+    108 -> 147 [label="yes" color="#FF0000"]
+    108 -> 148 [label="no, missing" color="#0000FF"]
+
+    147 [ label="p1_IsoBDT<-0.177802369" ]
+    147 -> 175 [label="yes" color="#FF0000"]
+    147 -> 176 [label="no, missing" color="#0000FF"]
+
+    175 [ label="LifeTime<0.000434078625" ]
+    175 -> 203 [label="yes" color="#FF0000"]
+    175 -> 204 [label="no, missing" color="#0000FF"]
+
+    203 [ label="leaf=-0.0141626848" ]
+
+    204 [ label="p2_IP<0.691283464" ]
+    204 -> 227 [label="yes" color="#FF0000"]
+    204 -> 228 [label="no, missing" color="#0000FF"]
+
+    227 [ label="leaf=0.0575682335" ]
+
+    228 [ label="p2_pt<814.357849" ]
+    228 -> 245 [label="yes" color="#FF0000"]
+    228 -> 246 [label="no, missing" color="#0000FF"]
+
+    245 [ label="leaf=0.0404111147" ]
+
+    246 [ label="leaf=-0.0141626848" ]
+
+    176 [ label="p0_IPSig<9.2899065" ]
+    176 -> 205 [label="yes" color="#FF0000"]
+    176 -> 206 [label="no, missing" color="#0000FF"]
+
+    205 [ label="leaf=0.0364359319" ]
+
+    206 [ label="leaf=-0.0572940297" ]
+
+    148 [ label="VertexChi2<1.47735858" ]
+    148 -> 177 [label="yes" color="#FF0000"]
+    148 -> 178 [label="no, missing" color="#0000FF"]
+
+    177 [ label="leaf=0.0467924774" ]
+
+    178 [ label="p0_IP<0.189493522" ]
+    178 -> 207 [label="yes" color="#FF0000"]
+    178 -> 208 [label="no, missing" color="#0000FF"]
+
+    207 [ label="p2_IP<0.139124691" ]
+    207 -> 229 [label="yes" color="#FF0000"]
+    207 -> 230 [label="no, missing" color="#0000FF"]
+
+    229 [ label="leaf=-0.0141626848" ]
+
+    230 [ label="p1_IsoBDT<-0.369874179" ]
+    230 -> 247 [label="yes" color="#FF0000"]
+    230 -> 248 [label="no, missing" color="#0000FF"]
+
+    247 [ label="leaf=-0.038210284" ]
+
+    248 [ label="leaf=-0.141227469" ]
+
+    208 [ label="p2_IP<0.153885901" ]
+    208 -> 231 [label="yes" color="#FF0000"]
+    208 -> 232 [label="no, missing" color="#0000FF"]
+
+    231 [ label="leaf=0.0339325145" ]
+
+    232 [ label="p1_IsoBDT<-0.398581982" ]
+    232 -> 249 [label="yes" color="#FF0000"]
+    232 -> 250 [label="no, missing" color="#0000FF"]
+
+    249 [ label="leaf=0.0143030081" ]
+
+    250 [ label="VertexChi2<3.8568449" ]
+    250 -> 257 [label="yes" color="#FF0000"]
+    250 -> 258 [label="no, missing" color="#0000FF"]
+
+    257 [ label="leaf=0.00222589751" ]
+
+    258 [ label="VertexChi2<7.37584448" ]
+    258 -> 261 [label="yes" color="#FF0000"]
+    258 -> 262 [label="no, missing" color="#0000FF"]
+
+    261 [ label="leaf=-0.112329759" ]
+
+    262 [ label="leaf=-0.0141626848" ]
+
+    76 [ label="p0_IPSig<4.74828529" ]
+    76 -> 109 [label="yes" color="#FF0000"]
+    76 -> 110 [label="no, missing" color="#0000FF"]
+
+    109 [ label="leaf=-0.104934506" ]
+
+    110 [ label="VertexChi2<8.71864319" ]
+    110 -> 149 [label="yes" color="#FF0000"]
+    110 -> 150 [label="no, missing" color="#0000FF"]
+
+    149 [ label="p1_track_Chi2Dof<0.762429595" ]
+    149 -> 179 [label="yes" color="#FF0000"]
+    149 -> 180 [label="no, missing" color="#0000FF"]
+
+    179 [ label="DOCAthree<0.0120990258" ]
+    179 -> 209 [label="yes" color="#FF0000"]
+    179 -> 210 [label="no, missing" color="#0000FF"]
+
+    209 [ label="leaf=-0.0741445422" ]
+
+    210 [ label="p1_p<28537.0605" ]
+    210 -> 233 [label="yes" color="#FF0000"]
+    210 -> 234 [label="no, missing" color="#0000FF"]
+
+    233 [ label="leaf=-0.00782991666" ]
+
+    234 [ label="leaf=0.0505755246" ]
+
+    180 [ label="p1_IsoBDT<-0.114125311" ]
+    180 -> 211 [label="yes" color="#FF0000"]
+    180 -> 212 [label="no, missing" color="#0000FF"]
+
+    211 [ label="p0_IP<0.390155464" ]
+    211 -> 235 [label="yes" color="#FF0000"]
+    211 -> 236 [label="no, missing" color="#0000FF"]
+
+    235 [ label="LifeTime<0.000935206248" ]
+    235 -> 251 [label="yes" color="#FF0000"]
+    235 -> 252 [label="no, missing" color="#0000FF"]
+
+    251 [ label="leaf=-0.0141626848" ]
+
+    252 [ label="leaf=0.0364359319" ]
+
+    236 [ label="leaf=0.0615234151" ]
+
+    212 [ label="leaf=-0.00782991666" ]
+
+    150 [ label="p1_p<29402.2285" ]
+    150 -> 181 [label="yes" color="#FF0000"]
+    150 -> 182 [label="no, missing" color="#0000FF"]
+
+    181 [ label="p1_track_Chi2Dof<1.15427375" ]
+    181 -> 213 [label="yes" color="#FF0000"]
+    181 -> 214 [label="no, missing" color="#0000FF"]
+
+    213 [ label="leaf=-0.0830433518" ]
+
+    214 [ label="leaf=-0.00243120966" ]
+
+    182 [ label="p2_pt<632.655579" ]
+    182 -> 215 [label="yes" color="#FF0000"]
+    182 -> 216 [label="no, missing" color="#0000FF"]
+
+    215 [ label="leaf=-0.038210284" ]
+
+    216 [ label="p1_p<65242.1406" ]
+    216 -> 237 [label="yes" color="#FF0000"]
+    216 -> 238 [label="no, missing" color="#0000FF"]
+
+    237 [ label="leaf=0.0476962887" ]
+
+    238 [ label="leaf=-0.00693397084" ]
+
+    42 [ label="p1_IsoBDT<-0.249658793" ]
+    42 -> 77 [label="yes" color="#FF0000"]
+    42 -> 78 [label="no, missing" color="#0000FF"]
+
+    77 [ label="VertexChi2<6.36592817" ]
+    77 -> 111 [label="yes" color="#FF0000"]
+    77 -> 112 [label="no, missing" color="#0000FF"]
+
+    111 [ label="leaf=0.038570106" ]
+
+    112 [ label="leaf=-0.038210284" ]
+
+    78 [ label="p2_IP<0.130609885" ]
+    78 -> 113 [label="yes" color="#FF0000"]
+    78 -> 114 [label="no, missing" color="#0000FF"]
+
+    113 [ label="p0_p<7762.18018" ]
+    113 -> 151 [label="yes" color="#FF0000"]
+    113 -> 152 [label="no, missing" color="#0000FF"]
+
+    151 [ label="leaf=-0.0520957671" ]
+
+    152 [ label="leaf=0.0339325145" ]
+
+    114 [ label="LifeTime<0.00143455283" ]
+    114 -> 153 [label="yes" color="#FF0000"]
+    114 -> 154 [label="no, missing" color="#0000FF"]
+
+    153 [ label="DOCAthree<0.00585492002" ]
+    153 -> 183 [label="yes" color="#FF0000"]
+    153 -> 184 [label="no, missing" color="#0000FF"]
+
+    183 [ label="leaf=-0.038210284" ]
+
+    184 [ label="mass<1798.91589" ]
+    184 -> 217 [label="yes" color="#FF0000"]
+    184 -> 218 [label="no, missing" color="#0000FF"]
+
+    217 [ label="p0_IP<0.294792771" ]
+    217 -> 239 [label="yes" color="#FF0000"]
+    217 -> 240 [label="no, missing" color="#0000FF"]
+
+    239 [ label="leaf=-0.0141626848" ]
+
+    240 [ label="leaf=-0.0963616148" ]
+
+    218 [ label="leaf=-0.183147356" ]
+
+    154 [ label="p2_pt<1379.27673" ]
+    154 -> 185 [label="yes" color="#FF0000"]
+    154 -> 186 [label="no, missing" color="#0000FF"]
+
+    185 [ label="leaf=-0.0844338462" ]
+
+    186 [ label="leaf=0.00988491438" ]
+
+    2 [ label="mass<1813.29797" ]
+    2 -> 5 [label="yes" color="#FF0000"]
+    2 -> 6 [label="no, missing" color="#0000FF"]
+
+    5 [ label="p1_IsoBDT<-0.261057466" ]
+    5 -> 11 [label="yes" color="#FF0000"]
+    5 -> 12 [label="no, missing" color="#0000FF"]
+
+    11 [ label="p1_p<40612.5898" ]
+    11 -> 23 [label="yes" color="#FF0000"]
+    11 -> 24 [label="no, missing" color="#0000FF"]
+
+    23 [ label="p0_IP<0.407117665" ]
+    23 -> 43 [label="yes" color="#FF0000"]
+    23 -> 44 [label="no, missing" color="#0000FF"]
+
+    43 [ label="leaf=-0.140566066" ]
+
+    44 [ label="VertexChi2<3.5379827" ]
+    44 -> 79 [label="yes" color="#FF0000"]
+    44 -> 80 [label="no, missing" color="#0000FF"]
+
+    79 [ label="leaf=0.0339325145" ]
+
+    80 [ label="p0_IP<0.48333329" ]
+    80 -> 115 [label="yes" color="#FF0000"]
+    80 -> 116 [label="no, missing" color="#0000FF"]
+
+    115 [ label="leaf=-0.0141626848" ]
+
+    116 [ label="leaf=-0.0963616148" ]
+
+    24 [ label="LifeTime<0.000561203924" ]
+    24 -> 45 [label="yes" color="#FF0000"]
+    24 -> 46 [label="no, missing" color="#0000FF"]
+
+    45 [ label="leaf=-0.104934506" ]
+
+    46 [ label="p1_track_Chi2Dof<0.859304249" ]
+    46 -> 81 [label="yes" color="#FF0000"]
+    46 -> 82 [label="no, missing" color="#0000FF"]
+
+    81 [ label="leaf=-0.035959322" ]
+
+    82 [ label="p1_p<55789.7578" ]
+    82 -> 117 [label="yes" color="#FF0000"]
+    82 -> 118 [label="no, missing" color="#0000FF"]
+
+    117 [ label="leaf=0.00985271577" ]
+
+    118 [ label="leaf=0.0521864668" ]
+
+    12 [ label="p0_IP<0.596846282" ]
+    12 -> 25 [label="yes" color="#FF0000"]
+    12 -> 26 [label="no, missing" color="#0000FF"]
+
+    25 [ label="VertexChi2<0.400261492" ]
+    25 -> 47 [label="yes" color="#FF0000"]
+    25 -> 48 [label="no, missing" color="#0000FF"]
+
+    47 [ label="leaf=-0.038210284" ]
+
+    48 [ label="leaf=-0.181354627" ]
+
+    26 [ label="p1_p<97215.0703" ]
+    26 -> 49 [label="yes" color="#FF0000"]
+    26 -> 50 [label="no, missing" color="#0000FF"]
+
+    49 [ label="p0_IPSig<31.9714184" ]
+    49 -> 83 [label="yes" color="#FF0000"]
+    49 -> 84 [label="no, missing" color="#0000FF"]
+
+    83 [ label="p2_IP<0.246052429" ]
+    83 -> 119 [label="yes" color="#FF0000"]
+    83 -> 120 [label="no, missing" color="#0000FF"]
+
+    119 [ label="VertexChi2<6.49463844" ]
+    119 -> 155 [label="yes" color="#FF0000"]
+    119 -> 156 [label="no, missing" color="#0000FF"]
+
+    155 [ label="leaf=0.0143030081" ]
+
+    156 [ label="leaf=-0.0622578859" ]
+
+    120 [ label="leaf=-0.153159767" ]
+
+    84 [ label="leaf=0.00222589751" ]
+
+    50 [ label="leaf=0.0404111147" ]
+
+    6 [ label="mass<1818.59204" ]
+    6 -> 13 [label="yes" color="#FF0000"]
+    6 -> 14 [label="no, missing" color="#0000FF"]
+
+    13 [ label="p1_p<82388.0234" ]
+    13 -> 27 [label="yes" color="#FF0000"]
+    13 -> 28 [label="no, missing" color="#0000FF"]
+
+    27 [ label="leaf=-0.180622563" ]
+
+    28 [ label="p0_IP<0.575660825" ]
+    28 -> 51 [label="yes" color="#FF0000"]
+    28 -> 52 [label="no, missing" color="#0000FF"]
+
+    51 [ label="DOCAthree<0.0395901389" ]
+    51 -> 85 [label="yes" color="#FF0000"]
+    51 -> 86 [label="no, missing" color="#0000FF"]
+
+    85 [ label="leaf=-0.125435159" ]
+
+    86 [ label="leaf=-0.0299628414" ]
+
+    52 [ label="leaf=0.00988491438" ]
+
+    14 [ label="leaf=-0.210952148" ]
+}
